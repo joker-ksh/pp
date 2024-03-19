@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TransactionPage</title>
+<link rel="stylesheet" href="/01style/04transaction.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="left-section">
+    <div class="form-container">
+      <h2 style="text-align: center;">Transaction Form</h2>
+      <select id="transaction-type">
+        <option value="lend">Lend</option>
+        <option value="borrow">Borrow</option>
+      </select>
+      <input type="number" id="amount-input" placeholder="Enter amount">
+      <button id="submit">Submit</button>
+    </div>
+  </div>
+  <div class="right-section">
+    <h2>Transaction History</h2>
+    <table id="transactionTable">
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Type</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="parent">
+        <!-- Data will be populated dynamically -->
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+<script type="module" src="/02script/04transaction.js"></script>
+</html>
